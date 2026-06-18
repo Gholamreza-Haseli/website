@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16th Annual Conference 2026 | ISDA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .keynote-card {
+      display: grid; grid-template-columns: 80px 1fr; gap: 1.25rem;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 1.5rem; align-items: start;
+      transition: box-shadow var(--transition);
+    }
+    .keynote-card:hover { box-shadow: var(--shadow-sm); }
+    .keynote-avatar {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-mid), var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.6rem; color: var(--white);
+    }
+    .schedule-row {
+      display: grid; grid-template-columns: 100px 1fr;
+      gap: 1rem; padding: .85rem 0; border-bottom: 1px solid var(--border);
+      align-items: start; font-size: .88rem;
+    }
+    .schedule-row:last-child { border-bottom: none; }
+    .schedule-time { color: var(--gold); font-weight: 700; font-size: .78rem; padding-top: .1rem; }
+    .schedule-title { color: var(--navy-deep); font-weight: 600; }
+    .schedule-detail { color: var(--slate-light); font-size: .8rem; }
+    .reg-tier {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 1.25rem; text-align: center;
+    }
+    .reg-tier__type { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--teal); margin-bottom: .35rem; }
+    .reg-tier__price { font-size: 2rem; font-family: var(--font-display); font-weight: 700; color: var(--navy-deep); }
+    .reg-tier__note { font-size: .75rem; color: var(--slate-light); margin-top: .25rem; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar"><div class="container topbar__inner"><span>International Society of Decision Analytics</span><div class="topbar__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">RG</a></div></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div>
+        <div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div>
+      </a>
+      <nav><button class="nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="main-nav">
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../awards/index.html">Awards</a></li>
+          <li><a href="../divisions/index.html">Divisions</a></li>
+          <li><a href="index.html" class="has-children">Conferences</a>
+            <ul class="dropdown">
+              <li><a href="annual.html">Annual Conference</a></li>
+              <li><a href="workshops.html">Workshops & Seminars</a></li>
+              <li><a href="past.html">Past Conferences</a></li>
+              <li><a href="call-for-papers.html">Call for Papers</a></li>
+            </ul>
+          </li>
+          <li><a href="../journal/index.html">Journal</a></li>
+          <li><a href="../membership/index.html">Membership</a></li>
+          <li><a href="../education/index.html">Education</a></li>
+          <li><a href="../jobs/index.html">Jobs</a></li>
+          <li><a href="../voices/index.html">Voices</a></li>
+        </ul>
+      </nav>
+      <a href="../membership/register.html" class="btn btn--teal btn--sm">Join ISDA</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="../../index.html">Home</a> › <a href="index.html">Conferences</a> › Annual Conference 2026</p>
+      <h1>16th ISDA Annual Conference</h1>
+      <p>April 14–17, 2026 · Vienna, Austria · Marriott Vienna Grand Hotel</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container layout-sidebar">
+      <div>
+
+        <!-- Theme Banner -->
+        <div style="background:rgba(26,127,160,.08);border-left:4px solid var(--teal);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:1.5rem;margin-bottom:2.5rem;">
+          <p class="eyebrow">Conference Theme</p>
+          <h3 style="color:var(--navy-deep);font-size:1.3rem;margin:0">"Analytics at the Edge: AI, Humans, and the Future of Decisions"</h3>
+        </div>
+
+        <!-- Overview -->
+        <h2 style="margin-bottom:.75rem">Conference Overview</h2>
+        <div class="gold-line gold-line--left" style="margin-bottom:1.5rem"></div>
+        <p>The 16th ISDA Annual Conference brings together over 800 researchers, practitioners, and educators from 45+ countries for four days of intellectual exchange in the heart of Vienna. This flagship event features keynote addresses from global thought leaders, competitive paper sessions, special panels, doctoral workshops, and networking events.</p>
+        <p>The conference theme, <em>"Analytics at the Edge,"</em> reflects the frontier challenges of decision analytics in the era of large language models, real-time data streams, and human-AI collaborative decision making. We welcome submissions spanning foundational methodology, empirical research, and applied case studies.</p>
+
+        <!-- Key Dates -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:2rem 0;">
+          <div style="background:var(--smoke);border-radius:var(--radius-md);padding:1.25rem;text-align:center;border:1px solid var(--border);">
+            <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem;">Submission Deadline</div>
+            <div style="font-size:1.2rem;font-weight:700;color:var(--navy-deep);font-family:var(--font-display);">Dec 1, 2025</div>
+          </div>
+          <div style="background:var(--smoke);border-radius:var(--radius-md);padding:1.25rem;text-align:center;border:1px solid var(--border);">
+            <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem;">Acceptance Notice</div>
+            <div style="font-size:1.2rem;font-weight:700;color:var(--navy-deep);font-family:var(--font-display);">Feb 1, 2026</div>
+          </div>
+          <div style="background:var(--smoke);border-radius:var(--radius-md);padding:1.25rem;text-align:center;border:1px solid var(--border);">
+            <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem;">Early-Bird Reg.</div>
+            <div style="font-size:1.2rem;font-weight:700;color:var(--navy-deep);font-family:var(--font-display);">Mar 1, 2026</div>
+          </div>
+          <div style="background:var(--smoke);border-radius:var(--radius-md);padding:1.25rem;text-align:center;border:1px solid var(--border);">
+            <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem;">Conference Dates</div>
+            <div style="font-size:1.2rem;font-weight:700;color:var(--navy-deep);font-family:var(--font-display);">Apr 14–17</div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Keynote Speakers -->
+        <h2 style="margin-bottom:1.5rem">Keynote Speakers</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem;">
+          <div class="keynote-card">
+            <div class="keynote-avatar">AK</div>
+            <div>
+              <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem;">Opening Keynote · Apr 14</div>
+              <div style="font-weight:700;color:var(--navy-deep);font-size:1rem;margin-bottom:.2rem;">Dr. Amir Karimi</div>
+              <div style="font-size:.8rem;color:var(--slate-light);margin-bottom:.5rem;">ISDA President · MIT Sloan School of Management</div>
+              <div style="font-size:.85rem;color:var(--slate);">"Decision Analytics in the Age of Foundation Models: Opportunities and Pitfalls"</div>
+            </div>
+          </div>
+          <div class="keynote-card">
+            <div class="keynote-avatar">PB</div>
+            <div>
+              <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem;">Plenary Keynote · Apr 15</div>
+              <div style="font-weight:700;color:var(--navy-deep);font-size:1rem;margin-bottom:.2rem;">Prof. Petra Bauer</div>
+              <div style="font-size:.8rem;color:var(--slate-light);margin-bottom:.5rem;">University of Vienna · 2024 Nobel Laureate in Economics</div>
+              <div style="font-size:.85rem;color:var(--slate);">"Behavioral Foundations of Algorithmic Decision Support"</div>
+            </div>
+          </div>
+          <div class="keynote-card">
+            <div class="keynote-avatar">JO</div>
+            <div>
+              <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem;">Industry Keynote · Apr 16</div>
+              <div style="font-weight:700;color:var(--navy-deep);font-size:1rem;margin-bottom:.2rem;">James O'Connor</div>
+              <div style="font-size:.8rem;color:var(--slate-light);margin-bottom:.5rem;">Chief Analytics Officer · Amazon Web Services</div>
+              <div style="font-size:.85rem;color:var(--slate);">"Scaling Decision Intelligence at a Trillion-Dollar Enterprise"</div>
+            </div>
+          </div>
+          <div class="keynote-card">
+            <div class="keynote-avatar">SL</div>
+            <div>
+              <div style="font-size:.68rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.25rem;">Closing Keynote · Apr 17</div>
+              <div style="font-weight:700;color:var(--navy-deep);font-size:1rem;margin-bottom:.2rem;">Prof. Sarah Lin</div>
+              <div style="font-size:.8rem;color:var(--slate-light);margin-bottom:.5rem;">Stanford University · ISDA President-Elect</div>
+              <div style="font-size:.85rem;color:var(--slate);">"The Next Decade of Decision Analytics: A Research Agenda"</div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Program Snapshot -->
+        <h2 style="margin-bottom:.75rem">Program Snapshot — Day 1 (Apr 14)</h2>
+        <div class="gold-line gold-line--left" style="margin-bottom:1.5rem"></div>
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;">
+          <div class="schedule-row">
+            <div class="schedule-time">08:00–09:00</div>
+            <div><div class="schedule-title">Registration & Welcome Breakfast</div><div class="schedule-detail">Grand Lobby, Marriott Vienna</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">09:00–10:15</div>
+            <div><div class="schedule-title">Opening Keynote: Dr. Amir Karimi</div><div class="schedule-detail">Grand Ballroom · "Decision Analytics in the Age of Foundation Models"</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">10:30–12:00</div>
+            <div><div class="schedule-title">Parallel Paper Sessions (8 tracks)</div><div class="schedule-detail">AI & ML · Healthcare · Supply Chain · Behavioral · Sustainability · FinTech · Doctoral · Industry</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">12:00–13:30</div>
+            <div><div class="schedule-title">Networking Lunch</div><div class="schedule-detail">Vienna Hall · Included in registration</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">13:30–15:30</div>
+            <div><div class="schedule-title">Parallel Paper Sessions (8 tracks, continued)</div><div class="schedule-detail">See full program for session details</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">16:00–17:30</div>
+            <div><div class="schedule-title">Panel: "Generative AI in Operations"</div><div class="schedule-detail">Moderator: Prof. Lin · Grand Ballroom</div></div>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-time">19:00–22:00</div>
+            <div><div class="schedule-title">Welcome Reception & ISDA Awards Dinner</div><div class="schedule-detail">Vienna Ballroom · Formal attire</div></div>
+          </div>
+        </div>
+        <div style="margin-top:1rem;"><a href="#" class="btn btn--teal btn--sm">Download Full Program (PDF)</a></div>
+
+        <hr class="divider">
+
+        <!-- Registration Fees -->
+        <h2 style="margin-bottom:1.5rem">Registration Fees</h2>
+        <div class="grid-3" style="margin-bottom:1.5rem;">
+          <div class="reg-tier">
+            <div class="reg-tier__type">Student Member</div>
+            <div class="reg-tier__price">$350</div>
+            <div class="reg-tier__note">Early-Bird (before Mar 1)</div>
+            <hr style="margin:.75rem 0;border-color:var(--border);">
+            <div style="font-size:.82rem;color:var(--slate-light);">$450 after Mar 1</div>
+          </div>
+          <div class="reg-tier" style="border-color:var(--gold);">
+            <div class="reg-tier__type">Regular Member</div>
+            <div class="reg-tier__price">$650</div>
+            <div class="reg-tier__note">Early-Bird (before Mar 1)</div>
+            <hr style="margin:.75rem 0;border-color:var(--border);">
+            <div style="font-size:.82rem;color:var(--slate-light);">$850 after Mar 1</div>
+          </div>
+          <div class="reg-tier">
+            <div class="reg-tier__type">Non-Member</div>
+            <div class="reg-tier__price">$950</div>
+            <div class="reg-tier__note">Early-Bird (before Mar 1)</div>
+            <hr style="margin:.75rem 0;border-color:var(--border);">
+            <div style="font-size:.82rem;color:var(--slate-light);">$1,200 after Mar 1</div>
+          </div>
+        </div>
+        <div class="alert alert--info"><span>ℹ</span><span>Not yet a member? <a href="../membership/register.html">Join ISDA</a> before registering to access member rates — you'll save more than the cost of membership.</span></div>
+        <a href="#" class="btn btn--primary btn--lg">Register for the Conference</a>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sidebar">
+          <div class="sidebar__title">Conferences</div>
+          <ul>
+            <li><a href="index.html">All Conferences</a></li>
+            <li><a href="annual.html" class="active">Annual Conference 2026</a></li>
+            <li><a href="workshops.html">Workshops & Seminars</a></li>
+            <li><a href="past.html">Past Conferences</a></li>
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+          </ul>
+        </div>
+
+        <div style="margin-top:1.5rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.5rem;">
+          <p class="eyebrow">Venue</p>
+          <h4 style="margin-bottom:.5rem;">Marriott Vienna Grand</h4>
+          <p style="font-size:.8rem;color:var(--slate-light);margin-bottom:.75rem;">Parkring 12A, 1010 Vienna, Austria</p>
+          <p style="font-size:.8rem;color:var(--slate-light);margin-bottom:.75rem;">Special conference rate: <strong style="color:var(--navy-deep)">€ 189/night</strong><br>Use code: <strong>ISDA2026</strong></p>
+          <a href="#" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Book Hotel</a>
+        </div>
+
+        <div style="margin-top:1.5rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.5rem;">
+          <p class="eyebrow">Quick Actions</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+            <li><a href="call-for-papers.html" class="btn btn--dark btn--sm" style="width:100%;justify-content:center;">Submit a Paper</a></li>
+            <li><a href="../membership/register.html" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Join ISDA First</a></li>
+            <li><a href="#" class="btn btn--outline" style="width:100%;justify-content:center;color:var(--navy-deep);border-color:var(--navy-deep);">Download Brochure</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="newsletter-strip">
+    <div class="container newsletter-strip__inner">
+      <div><h3>Conference Updates</h3><p>Subscribe to receive program updates and deadline reminders.</p></div>
+      <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="your@email.com"><button class="btn btn--dark" type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="site-logo" style="margin-bottom:.75rem;display:inline-flex;"><div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div><div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div></a><p class="footer__tagline">Advancing decision analytics worldwide since 2010.</p><div class="footer__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">R</a></div></div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="../about/index.html">About ISDA</a></li><li><a href="../board-members/index.html">Board Members</a></li><li><a href="../divisions/index.html">Divisions</a></li><li><a href="index.html">Conferences</a></li></ul></div>
+        <div class="footer__col"><h4>Journal</h4><ul><li><a href="../journal/index.html">ISDA Journal</a></li><li><a href="../journal/editorial-board.html">Editorial Board</a></li><li><a href="../awards/index.html">Awards</a></li><li><a href="call-for-papers.html">Call for Papers</a></li></ul></div>
+        <div class="footer__col"><h4>Membership</h4><ul><li><a href="../membership/index.html">Join ISDA</a></li><li><a href="../membership/register.html">Register</a></li><li><a href="../membership/benefits.html">Benefits</a></li><li><a href="../about/contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© <span id="footer-year"></span> International Society of Decision Analytics.</span></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

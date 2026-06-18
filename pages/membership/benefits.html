@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Benefits | ISDA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .benefit-row {
+      display: grid; grid-template-columns: 52px 1fr;
+      gap: 1.25rem; padding: 1.25rem;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); align-items: flex-start;
+      transition: box-shadow var(--transition);
+    }
+    .benefit-row:hover { box-shadow: var(--shadow-sm); }
+    .benefit-icon {
+      width: 52px; height: 52px; border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+    .benefit-title { font-weight: 700; color: var(--navy-deep); font-size: .95rem; margin-bottom: .25rem; }
+    .benefit-desc  { font-size: .83rem; color: var(--slate-light); margin: 0; }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    .compare-table th { background: var(--navy-deep); color: var(--white); padding: .9rem 1rem; text-align: left; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+    .compare-table th:not(:first-child) { text-align: center; }
+    .compare-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--border); color: var(--slate); }
+    .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:hover td { background: var(--smoke); }
+    .check { color: #22913A; font-size: 1rem; }
+    .cross { color: #C53030; font-size: 1rem; }
+    .partial { color: var(--gold); font-size: .78rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar"><div class="container topbar__inner"><span>International Society of Decision Analytics</span><div class="topbar__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">RG</a></div></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div>
+        <div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div>
+      </a>
+      <nav><button class="nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="main-nav">
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../awards/index.html">Awards</a></li>
+          <li><a href="../divisions/index.html">Divisions</a></li>
+          <li><a href="../conferences/index.html">Conferences</a></li>
+          <li><a href="../journal/index.html">Journal</a></li>
+          <li><a href="index.html" class="has-children">Membership</a>
+            <ul class="dropdown">
+              <li><a href="index.html">Join ISDA</a></li>
+              <li><a href="register.html">Register / Sign Up</a></li>
+              <li><a href="benefits.html">Member Benefits</a></li>
+              <li><a href="renew.html">Renew Membership</a></li>
+            </ul>
+          </li>
+          <li><a href="../education/index.html">Education</a></li>
+          <li><a href="../jobs/index.html">Jobs</a></li>
+          <li><a href="../voices/index.html">Voices</a></li>
+        </ul>
+      </nav>
+      <a href="register.html" class="btn btn--teal btn--sm">Join ISDA</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="../../index.html">Home</a> › <a href="index.html">Membership</a> › Benefits</p>
+      <h1>Member Benefits</h1>
+      <p>ISDA membership opens doors to the global decision analytics community — with exclusive access to research, events, education, and professional development.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Benefits Grid -->
+      <div class="section-header">
+        <p class="eyebrow">Why Join ISDA?</p>
+        <h2>Everything You Get as a Member</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:.85rem;margin-bottom:3.5rem;">
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(26,127,160,.1);">📖</div>
+          <div>
+            <div class="benefit-title">Full Access to Journal of Decision Analytics (JDA)</div>
+            <p class="benefit-desc">Unlimited online access to all current and archival issues of ISDA's flagship peer-reviewed journal — impact factor 4.8, indexed in SSCI and Scopus. A $380/year value included free with membership.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(196,154,43,.1);">🎤</div>
+          <div>
+            <div class="benefit-title">Reduced Conference Registration Rates</div>
+            <p class="benefit-desc">Members save up to 45% on Annual Conference registration and receive priority access to workshops and doctoral colloquium seats. Student members receive the highest discount.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(11,31,58,.08);">🏆</div>
+          <div>
+            <div class="benefit-title">Eligibility for All ISDA Awards</div>
+            <p class="benefit-desc">Only members in good standing may nominate for or receive ISDA Society Awards, including the prestigious ISDA Fellows Award, Early Career Award, Best Dissertation Award, and more.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(34,139,69,.1);">🌐</div>
+          <div>
+            <div class="benefit-title">Division Membership & Community</div>
+            <p class="benefit-desc">Regular and Student members receive free membership in up to two Research Divisions, accessing focused workshops, networking events, and collaborative research initiatives in their specialization.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(124,58,237,.1);">🎓</div>
+          <div>
+            <div class="benefit-title">Free Access to All ISDA Online Courses</div>
+            <p class="benefit-desc">Unlimited access to ISDA's growing library of online courses in decision analytics — from beginner introductions to advanced methodological workshops — taught by leading scholars from top institutions worldwide.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(26,127,160,.1);">📡</div>
+          <div>
+            <div class="benefit-title">Free Monthly Webinars</div>
+            <p class="benefit-desc">Monthly live webinars featuring ISDA researchers, practitioners, and thought leaders — all sessions recorded and available on-demand in the member library.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(197,48,48,.1);">📋</div>
+          <div>
+            <div class="benefit-title">Academic Jobs Board (Post for Free)</div>
+            <p class="benefit-desc">Members may post academic and industry positions on the ISDA Jobs Board at no cost. Non-members pay $75 per listing. The board reaches 3,200+ qualified decision analytics professionals worldwide.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(196,154,43,.1);">📰</div>
+          <div>
+            <div class="benefit-title">ISDA Chronicle — Quarterly Newsletter</div>
+            <p class="benefit-desc">The Chronicle delivers research highlights, society news, conference previews, member spotlights, and curated reading lists directly to your inbox every quarter.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(11,31,58,.08);">🗳</div>
+          <div>
+            <div class="benefit-title">Voting Rights in ISDA Elections</div>
+            <p class="benefit-desc">Regular and higher-tier members vote in annual Board of Directors elections and referenda on society bylaws — your voice in shaping ISDA's future direction.</p>
+          </div>
+        </div>
+        <div class="benefit-row">
+          <div class="benefit-icon" style="background:rgba(34,139,69,.1);">🤝</div>
+          <div>
+            <div class="benefit-title">Mentorship & Networking Programs</div>
+            <p class="benefit-desc">Access ISDA's formal mentorship matching program, the PhD student mentor network, and regional chapter events — building relationships that advance careers at every stage.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <h2 style="margin-bottom:1.5rem;">Benefits by Membership Type</h2>
+      <div style="overflow-x:auto;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="min-width:240px;">Benefit</th>
+              <th>Student<br><small style="font-weight:400;color:rgba(255,255,255,.6)">$45/yr</small></th>
+              <th>Regular<br><small style="font-weight:400;color:rgba(255,255,255,.6)">$120/yr</small></th>
+              <th>Institutional<br><small style="font-weight:400;color:rgba(255,255,255,.6)">$350/yr</small></th>
+              <th>Life<br><small style="font-weight:400;color:rgba(255,255,255,.6)">$1,200</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Full online access to JDA</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Print copy of JDA</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Conference member rate</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Complimentary conference pass (1×)</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Free Division memberships</td><td><span class="partial">1 Division</span></td><td><span class="partial">2 Divisions</span></td><td><span class="check">All</span></td><td><span class="check">All</span></td></tr>
+            <tr><td>Online courses (free)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Free webinar access</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Post jobs for free</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>ISDA Chronicle newsletter</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Voting rights</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Award eligibility</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Mentorship program</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+            <tr><td>Logo on ISDA website</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td></tr>
+            <tr><td>Listed in ISDA Yearbook</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+            <tr>
+              <td></td>
+              <td><a href="register.html?type=student" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Join</a></td>
+              <td><a href="register.html?type=regular" class="btn btn--primary btn--sm" style="width:100%;justify-content:center;">Join</a></td>
+              <td><a href="register.html?type=institutional" class="btn btn--dark btn--sm" style="width:100%;justify-content:center;">Join</a></td>
+              <td><a href="register.html?type=life" class="btn btn--dark btn--sm" style="width:100%;justify-content:center;">Join</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem;">
+        <p style="color:var(--slate-light);font-size:.9rem;margin-bottom:1.25rem;">Ready to join the global decision analytics community?</p>
+        <a href="register.html" class="btn btn--primary btn--lg">Become an ISDA Member</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="newsletter-strip">
+    <div class="container newsletter-strip__inner">
+      <div><h3>Stay Informed</h3><p>Get the ISDA newsletter with research, events, and updates.</p></div>
+      <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="your@email.com"><button class="btn btn--dark" type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="site-logo" style="margin-bottom:.75rem;display:inline-flex;"><div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div><div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div></a><p class="footer__tagline">Advancing decision analytics worldwide since 2010.</p><div class="footer__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">R</a></div></div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="../about/index.html">About ISDA</a></li><li><a href="../board-members/index.html">Board Members</a></li><li><a href="../divisions/index.html">Divisions</a></li><li><a href="../conferences/index.html">Conferences</a></li></ul></div>
+        <div class="footer__col"><h4>Journal</h4><ul><li><a href="../journal/index.html">ISDA Journal</a></li><li><a href="../journal/editorial-board.html">Editorial Board</a></li><li><a href="../awards/index.html">Awards</a></li><li><a href="../conferences/call-for-papers.html">Call for Papers</a></li></ul></div>
+        <div class="footer__col"><h4>Membership</h4><ul><li><a href="index.html">Join ISDA</a></li><li><a href="register.html">Register</a></li><li><a href="benefits.html">Benefits</a></li><li><a href="../about/contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© <span id="footer-year"></span> International Society of Decision Analytics.</span></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

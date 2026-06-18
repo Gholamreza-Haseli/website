@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education & Resources | ISDA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .course-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); overflow: hidden;
+      transition: box-shadow var(--transition), transform var(--transition);
+    }
+    .course-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .course-card__banner {
+      height: 90px; display: flex; align-items: center;
+      justify-content: center; font-size: 2.5rem;
+    }
+    .course-card__body { padding: 1.25rem; }
+    .course-card__level {
+      font-size: .68rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .1em; color: var(--teal); margin-bottom: .4rem;
+    }
+    .course-card__title { font-weight: 700; color: var(--navy-deep); font-size: .95rem; margin-bottom: .4rem; }
+    .course-card__meta  { font-size: .78rem; color: var(--slate-light); margin-bottom: .75rem; }
+    .webinar-row {
+      display: grid; grid-template-columns: 80px 1fr auto;
+      gap: 1rem; align-items: center; padding: 1rem 1.25rem;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); margin-bottom: .6rem;
+      transition: box-shadow var(--transition);
+    }
+    .webinar-row:hover { box-shadow: var(--shadow-sm); }
+    .webinar-date-box {
+      background: var(--navy-deep); color: var(--white);
+      border-radius: var(--radius-sm); padding: .5rem .6rem;
+      text-align: center;
+    }
+    .webinar-month { font-size: .6rem; text-transform: uppercase; letter-spacing: .08em; color: var(--gold); display: block; }
+    .webinar-day   { font-size: 1.5rem; font-weight: 700; font-family: var(--font-display); line-height: 1; }
+    .webinar-title { font-weight: 600; color: var(--navy-deep); font-size: .9rem; margin-bottom: .2rem; }
+    .webinar-meta  { font-size: .78rem; color: var(--slate-light); }
+  </style>
+</head>
+<body>
+
+  <div class="topbar"><div class="container topbar__inner"><span>International Society of Decision Analytics</span><div class="topbar__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">RG</a></div></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div>
+        <div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div>
+      </a>
+      <nav><button class="nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="main-nav">
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../awards/index.html">Awards</a></li>
+          <li><a href="../divisions/index.html">Divisions</a></li>
+          <li><a href="../conferences/index.html">Conferences</a></li>
+          <li><a href="../journal/index.html">Journal</a></li>
+          <li><a href="../membership/index.html">Membership</a></li>
+          <li><a href="index.html" class="has-children">Education</a>
+            <ul class="dropdown">
+              <li><a href="index.html">Resources</a></li>
+              <li><a href="courses.html">Online Courses</a></li>
+              <li><a href="doctoral.html">Doctoral Program Support</a></li>
+              <li><a href="webinars.html">Webinars</a></li>
+            </ul>
+          </li>
+          <li><a href="../jobs/index.html">Jobs</a></li>
+          <li><a href="../voices/index.html">Voices</a></li>
+        </ul>
+      </nav>
+      <a href="../membership/register.html" class="btn btn--teal btn--sm">Join ISDA</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="../../index.html">Home</a> › Education & Resources</p>
+      <h1>Education & Resources</h1>
+      <p>From online courses to doctoral mentorship — ISDA supports lifelong learning in decision analytics at every career stage.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container layout-sidebar">
+      <div>
+
+        <!-- Resource Tiles -->
+        <div class="grid-2" style="margin-bottom:3rem;">
+          <a href="courses.html" style="text-decoration:none;">
+            <div style="background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid));border-radius:var(--radius-lg);padding:2rem;color:var(--white);transition:transform var(--transition);display:block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <div style="font-size:2.5rem;margin-bottom:.75rem;">🎓</div>
+              <h3 style="color:var(--white);margin-bottom:.5rem;">Online Courses</h3>
+              <p style="color:rgba(255,255,255,.7);font-size:.85rem;margin:0;">Self-paced and live courses in decision analytics fundamentals, advanced methods, and domain applications.</p>
+            </div>
+          </a>
+          <a href="webinars.html" style="text-decoration:none;">
+            <div style="background:linear-gradient(135deg,var(--teal),#0E4A6E);border-radius:var(--radius-lg);padding:2rem;color:var(--white);transition:transform var(--transition);display:block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <div style="font-size:2.5rem;margin-bottom:.75rem;">📡</div>
+              <h3 style="color:var(--white);margin-bottom:.5rem;">Webinars</h3>
+              <p style="color:rgba(255,255,255,.7);font-size:.85rem;margin:0;">Free monthly webinars featuring ISDA researchers, practitioners, and thought leaders. All sessions recorded.</p>
+            </div>
+          </a>
+          <a href="doctoral.html" style="text-decoration:none;">
+            <div style="background:linear-gradient(135deg,#7A5F00,var(--gold));border-radius:var(--radius-lg);padding:2rem;color:var(--navy-deep);transition:transform var(--transition);display:block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <div style="font-size:2.5rem;margin-bottom:.75rem;">🔬</div>
+              <h3 style="color:var(--navy-deep);margin-bottom:.5rem;">Doctoral Support</h3>
+              <p style="color:rgba(11,31,58,.7);font-size:.85rem;margin:0;">Mentorship programs, travel grants, and the Doctoral Consortium for PhD students in decision analytics.</p>
+            </div>
+          </a>
+          <a href="#resources" style="text-decoration:none;">
+            <div style="background:linear-gradient(135deg,#2D6A4F,#52B788);border-radius:var(--radius-lg);padding:2rem;color:var(--white);transition:transform var(--transition);display:block;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <div style="font-size:2.5rem;margin-bottom:.75rem;">📚</div>
+              <h3 style="color:var(--white);margin-bottom:.5rem;">Teaching Resources</h3>
+              <p style="color:rgba(255,255,255,.7);font-size:.85rem;margin:0;">Cases, datasets, syllabi, and pedagogical materials shared by ISDA members for classroom use.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Featured Courses -->
+        <h2 style="margin-bottom:1.5rem;">Featured Online Courses</h2>
+        <div class="grid-3" style="margin-bottom:2.5rem;">
+          <div class="course-card">
+            <div class="course-card__banner" style="background:linear-gradient(135deg,var(--navy-deep),var(--navy-mid));">🤖</div>
+            <div class="course-card__body">
+              <div class="course-card__level">Intermediate · 8 Weeks</div>
+              <div class="course-card__title">Data-Driven Optimization with Python</div>
+              <div class="course-card__meta">Instructor: Prof. Sarah Lin · Stanford<br>⭐ 4.9 · 1,240 enrolled</div>
+              <a href="courses.html" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Enroll — Free for Members</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-card__banner" style="background:linear-gradient(135deg,#7A5F00,var(--gold));">📊</div>
+            <div class="course-card__body">
+              <div class="course-card__level">Beginner · 4 Weeks</div>
+              <div class="course-card__title">Introduction to Decision Analytics</div>
+              <div class="course-card__meta">Instructor: Dr. Amir Karimi · MIT<br>⭐ 4.8 · 3,100 enrolled</div>
+              <a href="courses.html" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Enroll — Free for Members</a>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-card__banner" style="background:linear-gradient(135deg,var(--teal),#0E4A6E);">🏥</div>
+            <div class="course-card__body">
+              <div class="course-card__level">Advanced · 10 Weeks</div>
+              <div class="course-card__title">Healthcare Analytics & Decision Support</div>
+              <div class="course-card__meta">Instructor: Dr. Fatima Noor · INSEAD<br>⭐ 4.7 · 890 enrolled</div>
+              <a href="courses.html" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;">Enroll — Free for Members</a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-bottom:3rem;">
+          <a href="courses.html" class="btn btn--dark">View All Courses</a>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Upcoming Webinars -->
+        <h2 style="margin-bottom:1.5rem;">Upcoming Webinars</h2>
+        <div style="margin-bottom:2rem;">
+          <div class="webinar-row">
+            <div class="webinar-date-box">
+              <span class="webinar-month">Jul</span>
+              <span class="webinar-day">10</span>
+            </div>
+            <div>
+              <div class="webinar-title">Causal Inference for Operations: A Practitioner's Introduction</div>
+              <div class="webinar-meta">Speaker: Prof. David Tran, UC Berkeley · 90 min · Free for all ISDA members</div>
+            </div>
+            <a href="webinars.html" class="btn btn--teal btn--sm">Register</a>
+          </div>
+          <div class="webinar-row">
+            <div class="webinar-date-box">
+              <span class="webinar-month">Aug</span>
+              <span class="webinar-day">14</span>
+            </div>
+            <div>
+              <div class="webinar-title">Robust Optimization Under Deep Uncertainty</div>
+              <div class="webinar-meta">Speaker: Prof. Thomas Weber, ETH Zürich · 60 min · Free for all ISDA members</div>
+            </div>
+            <a href="webinars.html" class="btn btn--teal btn--sm">Register</a>
+          </div>
+          <div class="webinar-row">
+            <div class="webinar-date-box">
+              <span class="webinar-month">Sep</span>
+              <span class="webinar-day">18</span>
+            </div>
+            <div>
+              <div class="webinar-title">ESG Analytics: Measuring What Matters</div>
+              <div class="webinar-meta">Speaker: Dr. Amara Osei, University of Cape Town · 75 min · Free for all ISDA members</div>
+            </div>
+            <a href="webinars.html" class="btn btn--teal btn--sm">Register</a>
+          </div>
+          <div class="webinar-row">
+            <div class="webinar-date-box">
+              <span class="webinar-month">Oct</span>
+              <span class="webinar-day">09</span>
+            </div>
+            <div>
+              <div class="webinar-title">Simulation-Based Optimization for Healthcare Scheduling</div>
+              <div class="webinar-meta">Speaker: Dr. Fatima Noor, INSEAD · 90 min · Free for all ISDA members</div>
+            </div>
+            <a href="webinars.html" class="btn btn--teal btn--sm">Register</a>
+          </div>
+        </div>
+        <div><a href="webinars.html" class="btn btn--dark">Browse Webinar Archive</a></div>
+
+        <hr class="divider">
+
+        <!-- Teaching Resources -->
+        <h2 id="resources" style="margin-bottom:1rem;">Teaching Resources</h2>
+        <div class="gold-line gold-line--left" style="margin-bottom:1.5rem"></div>
+        <p>ISDA members share open-access pedagogical materials to support teaching decision analytics at undergraduate, graduate, and executive levels.</p>
+        <div class="grid-3" style="margin:1.5rem 0;">
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">📁</div>
+            <div style="font-weight:700;color:var(--navy-deep);font-size:.9rem;margin-bottom:.25rem;">Case Studies</div>
+            <div style="font-size:.78rem;color:var(--slate-light);margin-bottom:.75rem;">47 teaching cases across all divisions</div>
+            <a href="#" class="btn btn--teal btn--sm">Browse Cases</a>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">📊</div>
+            <div style="font-weight:700;color:var(--navy-deep);font-size:.9rem;margin-bottom:.25rem;">Open Datasets</div>
+            <div style="font-size:.78rem;color:var(--slate-light);margin-bottom:.75rem;">Curated datasets for classroom exercises</div>
+            <a href="#" class="btn btn--teal btn--sm">Browse Datasets</a>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">📝</div>
+            <div style="font-weight:700;color:var(--navy-deep);font-size:.9rem;margin-bottom:.25rem;">Sample Syllabi</div>
+            <div style="font-size:.78rem;color:var(--slate-light);margin-bottom:.75rem;">Course outlines shared by ISDA educators</div>
+            <a href="#" class="btn btn--teal btn--sm">Browse Syllabi</a>
+          </div>
+        </div>
+
+        <div class="alert alert--info">
+          <span>ℹ</span>
+          <span>Teaching resources are free for all ISDA members. To contribute your own materials, use the submission form in the member portal or <a href="../about/contact.html">contact us</a>.</span>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sidebar">
+          <div class="sidebar__title">Education</div>
+          <ul>
+            <li><a href="index.html" class="active">Resources</a></li>
+            <li><a href="courses.html">Online Courses</a></li>
+            <li><a href="doctoral.html">Doctoral Program Support</a></li>
+            <li><a href="webinars.html">Webinars</a></li>
+          </ul>
+        </div>
+
+        <div style="margin-top:1.5rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.5rem;">
+          <p class="eyebrow">Doctoral Support</p>
+          <h4 style="margin-bottom:.75rem;">PhD Student Benefits</h4>
+          <ul style="list-style:none;font-size:.82rem;color:var(--slate-light);">
+            <li style="padding:.35rem 0;border-bottom:1px solid var(--border);">✓ Reduced conference fees</li>
+            <li style="padding:.35rem 0;border-bottom:1px solid var(--border);">✓ Travel grants up to $500</li>
+            <li style="padding:.35rem 0;border-bottom:1px solid var(--border);">✓ Doctoral Consortium access</li>
+            <li style="padding:.35rem 0;border-bottom:1px solid var(--border);">✓ Mentor matching program</li>
+            <li style="padding:.35rem 0;">✓ Free access to all courses</li>
+          </ul>
+          <a href="doctoral.html" class="btn btn--teal btn--sm" style="width:100%;justify-content:center;margin-top:1rem;">Doctoral Program</a>
+        </div>
+
+        <div style="margin-top:1.5rem;background:rgba(196,154,43,.08);border:1px solid rgba(196,154,43,.3);border-radius:var(--radius-md);padding:1.5rem;">
+          <p class="eyebrow" style="color:var(--gold);">Teach with ISDA</p>
+          <p style="font-size:.82rem;color:var(--slate-light);margin-bottom:1rem;">Propose a course or webinar and share your expertise with the global ISDA community.</p>
+          <a href="../about/contact.html" class="btn btn--dark btn--sm" style="width:100%;justify-content:center;">Propose Content</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="newsletter-strip">
+    <div class="container newsletter-strip__inner">
+      <div><h3>Learning Alerts</h3><p>Get notified about new courses, webinars, and resources.</p></div>
+      <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="your@email.com"><button class="btn btn--dark" type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="site-logo" style="margin-bottom:.75rem;display:inline-flex;"><div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div><div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div></a><p class="footer__tagline">Advancing decision analytics worldwide since 2010.</p><div class="footer__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">R</a></div></div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="../about/index.html">About ISDA</a></li><li><a href="../board-members/index.html">Board Members</a></li><li><a href="../divisions/index.html">Divisions</a></li><li><a href="../conferences/index.html">Conferences</a></li></ul></div>
+        <div class="footer__col"><h4>Education</h4><ul><li><a href="index.html">Resources</a></li><li><a href="courses.html">Online Courses</a></li><li><a href="doctoral.html">Doctoral Support</a></li><li><a href="webinars.html">Webinars</a></li></ul></div>
+        <div class="footer__col"><h4>Membership</h4><ul><li><a href="../membership/index.html">Join ISDA</a></li><li><a href="../membership/register.html">Register</a></li><li><a href="../membership/benefits.html">Benefits</a></li><li><a href="../about/contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© <span id="footer-year"></span> International Society of Decision Analytics.</span></div>
+    </div>
+  </footer>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
