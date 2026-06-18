@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join ISDA — Membership | International Society of Decision Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+    .reg-success { display: none; text-align: center; padding: 3rem 2rem; }
+    .reg-success__icon { font-size: 4rem; display: block; margin-bottom: 1rem; }
+    .step-indicator { display: flex; gap: 0; margin-bottom: 2.5rem; }
+    .step {
+      flex: 1; text-align: center; padding: .75rem .5rem;
+      font-size: .75rem; font-weight: 600;
+      color: var(--slate-light); background: var(--smoke);
+      border-bottom: 3px solid var(--border);
+      transition: all var(--transition);
+    }
+    .step.active { color: var(--teal); border-bottom-color: var(--teal); background: var(--white); }
+    .step.done   { color: var(--white); background: var(--teal); border-bottom-color: var(--teal); }
+  </style>
+</head>
+<body>
+
+  <div class="topbar"><div class="container topbar__inner"><span>International Society of Decision Analytics</span><div class="topbar__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">RG</a></div></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div>
+        <div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div>
+      </a>
+      <nav><button class="nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="main-nav">
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../awards/index.html">Awards</a></li>
+          <li><a href="../divisions/index.html">Divisions</a></li>
+          <li><a href="../conferences/index.html">Conferences</a></li>
+          <li><a href="../journal/index.html">Journal</a></li>
+          <li><a href="index.html" class="has-children">Membership</a>
+            <ul class="dropdown">
+              <li><a href="index.html">Join ISDA</a></li>
+              <li><a href="register.html">Register / Sign Up</a></li>
+              <li><a href="benefits.html">Member Benefits</a></li>
+              <li><a href="renew.html">Renew Membership</a></li>
+            </ul>
+          </li>
+          <li><a href="../education/index.html">Education</a></li>
+          <li><a href="../jobs/index.html">Jobs</a></li>
+          <li><a href="../voices/index.html">Voices</a></li>
+        </ul>
+      </nav>
+      <a href="register.html" class="btn btn--teal btn--sm">Join ISDA</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="../../index.html">Home</a> › Membership › Register</p>
+      <h1>Join ISDA</h1>
+      <p>Become part of a global community of decision analytics researchers, practitioners, and educators.</p>
+    </div>
+  </div>
+
+  <!-- Membership Plans -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Choose Your Plan</p>
+        <h2>Membership Categories</h2>
+        <div class="gold-line"></div>
+        <p>Annual membership runs January–December. Join any time and your membership is prorated.</p>
+      </div>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-card__name">Student</div>
+          <div class="plan-card__price"><sup>$</sup>45</div>
+          <div class="plan-card__period">per year</div>
+          <ul>
+            <li>Full access to JDA online</li>
+            <li>Reduced conference registration</li>
+            <li>Member newsletter</li>
+            <li>ISDA jobs board</li>
+            <li>Division membership (1 free)</li>
+          </ul>
+          <a href="#registration-form" class="btn btn--teal" style="width:100%;justify-content:center;" onclick="document.getElementById('mem-type').value='student'">Select Plan</a>
+        </div>
+
+        <div class="plan-card plan-card--featured">
+          <div class="plan-card__name">Regular</div>
+          <div class="plan-card__price"><sup>$</sup>120</div>
+          <div class="plan-card__period">per year</div>
+          <ul>
+            <li>Full access to JDA online</li>
+            <li>Reduced conference registration</li>
+            <li>Member newsletter & Chronicle</li>
+            <li>ISDA jobs board</li>
+            <li>Division membership (2 free)</li>
+            <li>Voting rights in elections</li>
+          </ul>
+          <a href="#registration-form" class="btn btn--primary" style="width:100%;justify-content:center;" onclick="document.getElementById('mem-type').value='regular'">Select Plan</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-card__name">Institutional</div>
+          <div class="plan-card__price"><sup>$</sup>350</div>
+          <div class="plan-card__period">per year</div>
+          <ul>
+            <li>All Regular benefits</li>
+            <li>Up to 5 institutional accounts</li>
+            <li>Print copy of JDA</li>
+            <li>Priority conference placement</li>
+            <li>All Divisions included</li>
+            <li>Logo on ISDA website</li>
+          </ul>
+          <a href="#registration-form" class="btn btn--dark" style="width:100%;justify-content:center;" onclick="document.getElementById('mem-type').value='institutional'">Select Plan</a>
+        </div>
+
+        <div class="plan-card">
+          <div class="plan-card__name">Life Member</div>
+          <div class="plan-card__price"><sup>$</sup>1,200</div>
+          <div class="plan-card__period">one time</div>
+          <ul>
+            <li>Lifetime Regular benefits</li>
+            <li>No annual renewal required</li>
+            <li>Listed in ISDA yearbook</li>
+            <li>Complimentary conference pass (1×)</li>
+            <li>All Divisions included</li>
+          </ul>
+          <a href="#registration-form" class="btn btn--dark" style="width:100%;justify-content:center;" onclick="document.getElementById('mem-type').value='life'">Select Plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="section" id="registration-form">
+    <div class="container" style="max-width:680px;">
+      <div class="section-header">
+        <p class="eyebrow">Sign Up</p>
+        <h2>Create Your Account</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- Step indicators -->
+      <div class="step-indicator">
+        <div class="step done">1 · Plan</div>
+        <div class="step active">2 · Personal Info</div>
+        <div class="step">3 · Payment</div>
+        <div class="step">4 · Confirm</div>
+      </div>
+
+      <!-- Success message (hidden by default) -->
+      <div class="reg-success" id="reg-success">
+        <span class="reg-success__icon">🎉</span>
+        <h2 style="margin-bottom:.75rem">Welcome to ISDA!</h2>
+        <p style="color:var(--slate-light);margin-bottom:1.5rem">Your application has been received. You will receive a confirmation email at the address provided within 24 hours.</p>
+        <a href="../../index.html" class="btn btn--teal">Return to Home</a>
+      </div>
+
+      <!-- Form -->
+      <form id="reg-form" novalidate>
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;">
+
+          <!-- Membership type -->
+          <div class="form-group">
+            <label class="form-label" for="mem-type">Membership Type *</label>
+            <select class="form-control" id="mem-type" name="mem-type" required>
+              <option value="">— Select membership type —</option>
+              <option value="student">Student — $45/year</option>
+              <option value="regular">Regular — $120/year</option>
+              <option value="institutional">Institutional — $350/year</option>
+              <option value="life">Life Member — $1,200 (one-time)</option>
+            </select>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name *</label>
+              <input class="form-control" type="text" id="first-name" name="first-name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name *</label>
+              <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="jane.smith@university.edu" required>
+            <p class="form-hint">Use your institutional email when possible. Membership confirmation will be sent here.</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Create Password *</label>
+            <input class="form-control" type="password" id="password" name="password" placeholder="Min. 8 characters" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="institution">Institution / Organization *</label>
+            <input class="form-control" type="text" id="institution" name="institution" placeholder="University / Company name" required>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="form-group">
+              <label class="form-label" for="country">Country *</label>
+              <select class="form-control" id="country" name="country" required>
+                <option value="">— Select country —</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>India</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Brazil</option>
+                <option>Iran</option>
+                <option>Turkey</option>
+                <option>South Africa</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="career-stage">Career Stage *</label>
+              <select class="form-control" id="career-stage" name="career-stage" required>
+                <option value="">— Select —</option>
+                <option>PhD Student</option>
+                <option>Postdoctoral Researcher</option>
+                <option>Assistant Professor</option>
+                <option>Associate Professor</option>
+                <option>Full Professor</option>
+                <option>Industry Professional</option>
+                <option>Government / NGO</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="research-area">Primary Research / Practice Area</label>
+            <select class="form-control" id="research-area" name="research-area">
+              <option value="">— Select primary area (optional) —</option>
+              <option>AI & Machine Learning</option>
+              <option>Healthcare Analytics</option>
+              <option>Supply Chain Decisions</option>
+              <option>Behavioral Decision Making</option>
+              <option>Sustainability Analytics</option>
+              <option>FinTech & Risk Analytics</option>
+              <option>Other / Interdisciplinary</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Division Interest (select all that apply)</label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem;">
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="ai"> AI & Machine Learning</label>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="healthcare"> Healthcare Analytics</label>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="supply-chain"> Supply Chain Decisions</label>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="behavioral"> Behavioral Decision Making</label>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="sustainability"> Sustainability Analytics</label>
+              <label style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;cursor:pointer;"><input type="checkbox" name="division" value="fintech"> FinTech & Risk Analytics</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:.75rem;font-size:.85rem;cursor:pointer;">
+              <input type="checkbox" name="newsletter" value="yes" checked style="margin-top:2px;flex-shrink:0;">
+              <span>Subscribe to the ISDA Chronicle (quarterly newsletter) and announcement emails</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:.75rem;font-size:.85rem;cursor:pointer;">
+              <input type="checkbox" name="terms" required style="margin-top:2px;flex-shrink:0;">
+              <span>I agree to the <a href="../about/terms.html">Terms of Use</a> and <a href="../about/privacy.html">Privacy Policy</a> of ISDA *</span>
+            </label>
+          </div>
+
+          <div class="alert alert--info">
+            <span>ℹ</span>
+            <span>After submitting this form, you will be directed to our secure payment portal (Stripe) to complete your membership payment. Your account will be activated upon successful payment.</span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">
+            Continue to Payment →
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="newsletter-strip">
+    <div class="container newsletter-strip__inner">
+      <div><h3>Already a Member?</h3><p>Login to access member benefits and the ISDA portal.</p></div>
+      <a href="login.html" class="btn btn--dark btn--lg">Member Login</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../../index.html" class="site-logo" style="margin-bottom:.75rem;display:inline-flex;"><div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div><div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div></a>
+          <p class="footer__tagline">Advancing decision analytics worldwide since 2010.</p>
+          <div class="footer__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">R</a></div>
+        </div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="../about/index.html">About ISDA</a></li><li><a href="../board-members/index.html">Board Members</a></li><li><a href="../divisions/index.html">Divisions</a></li><li><a href="../conferences/index.html">Conferences</a></li></ul></div>
+        <div class="footer__col"><h4>Journal</h4><ul><li><a href="../journal/index.html">ISDA Journal</a></li><li><a href="../journal/editorial-board.html">Editorial Board</a></li><li><a href="../awards/index.html">Awards</a></li><li><a href="../journal/call-for-papers.html">Call for Papers</a></li></ul></div>
+        <div class="footer__col"><h4>Membership</h4><ul><li><a href="index.html">Join ISDA</a></li><li><a href="register.html">Register</a></li><li><a href="benefits.html">Benefits</a></li><li><a href="../about/contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© <span id="footer-year"></span> International Society of Decision Analytics.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    document.getElementById('reg-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.textContent = 'Processing…';
+      btn.disabled = true;
+
+      // Validate required fields
+      const required = e.target.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value && field.type !== 'checkbox') { field.style.borderColor = '#E53E3E'; valid = false; }
+        else if (field.type === 'checkbox' && !field.checked) { valid = false; }
+        else { field.style.borderColor = ''; }
+      });
+
+      if (!valid) { btn.textContent = origText; btn.disabled = false; return; }
+
+      await new Promise(r => setTimeout(r, 1400));
+      document.getElementById('reg-form').style.display = 'none';
+      document.getElementById('reg-success').style.display = 'block';
+    });
+  </script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

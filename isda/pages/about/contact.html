@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | ISDA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <style>
+    .contact-info-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 1.5rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+      transition: box-shadow var(--transition);
+    }
+    .contact-info-card:hover { box-shadow: var(--shadow-sm); }
+    .contact-icon {
+      width: 44px; height: 44px; border-radius: var(--radius-md);
+      background: rgba(26,127,160,.1); display: flex;
+      align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .contact-info-card h4 { font-size: .9rem; color: var(--navy-deep); margin-bottom: .25rem; }
+    .contact-info-card p, .contact-info-card a { font-size: .83rem; color: var(--slate-light); margin: 0; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar"><div class="container topbar__inner"><span>International Society of Decision Analytics</span><div class="topbar__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">RG</a></div></div></div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div>
+        <div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div>
+      </a>
+      <nav><button class="nav-toggle" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="main-nav">
+          <li><a href="index.html" class="has-children">About</a>
+            <ul class="dropdown">
+              <li><a href="index.html">About ISDA</a></li>
+              <li><a href="mission.html">Mission & Vision</a></li>
+              <li><a href="history.html">History</a></li>
+              <li><a href="bylaws.html">Bylaws</a></li>
+              <li><a href="../board-members/index.html">Board of Directors</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a href="../awards/index.html">Awards</a></li>
+          <li><a href="../divisions/index.html">Divisions</a></li>
+          <li><a href="../conferences/index.html">Conferences</a></li>
+          <li><a href="../journal/index.html">Journal</a></li>
+          <li><a href="../membership/index.html">Membership</a></li>
+          <li><a href="../education/index.html">Education</a></li>
+          <li><a href="../jobs/index.html">Jobs</a></li>
+          <li><a href="../voices/index.html">Voices</a></li>
+        </ul>
+      </nav>
+      <a href="../membership/register.html" class="btn btn--teal btn--sm">Join ISDA</a>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="page-header__breadcrumb"><a href="../../index.html">Home</a> › <a href="index.html">About</a> › Contact Us</p>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out with questions about membership, the journal, conferences, or any other matter.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:3rem;align-items:start;">
+
+        <!-- Contact Form -->
+        <div>
+          <h2 style="margin-bottom:1.5rem;">Send Us a Message</h2>
+          <div id="contact-success" style="display:none;" class="alert alert--success">
+            <span>✓</span>
+            <div><strong>Message sent!</strong> We typically respond within 2–3 business days. Thank you for reaching out.</div>
+          </div>
+
+          <form id="contact-form" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="cf-first">First Name *</label>
+                <input class="form-control" type="text" id="cf-first" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-last">Last Name *</label>
+                <input class="form-control" type="text" id="cf-last" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-email">Email Address *</label>
+              <input class="form-control" type="email" id="cf-email" placeholder="jane@university.edu" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-topic">Topic *</label>
+              <select class="form-control" id="cf-topic" required>
+                <option value="">— Select a topic —</option>
+                <option>Membership Inquiry</option>
+                <option>Journal Submission</option>
+                <option>Conference / Events</option>
+                <option>Awards & Nominations</option>
+                <option>Education & Webinars</option>
+                <option>Jobs Board</option>
+                <option>Technical Support</option>
+                <option>Press / Media</option>
+                <option>Partnership / Sponsorship</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-org">Institution / Organization</label>
+              <input class="form-control" type="text" id="cf-org" placeholder="Your university or company">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-message">Message *</label>
+              <textarea class="form-control" id="cf-message" rows="6" placeholder="Please describe your question or request in detail…" required></textarea>
+            </div>
+            <div class="form-group">
+              <label style="display:flex;align-items:flex-start;gap:.75rem;font-size:.85rem;cursor:pointer;">
+                <input type="checkbox" style="margin-top:2px;flex-shrink:0;" required>
+                <span>I agree to ISDA's <a href="privacy.html">Privacy Policy</a> and consent to being contacted about my inquiry. *</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <h2 style="margin-bottom:.5rem;">Get in Touch</h2>
+          <div class="gold-line gold-line--left" style="margin-bottom:.5rem;"></div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">✉</div>
+            <div>
+              <h4>General Inquiries</h4>
+              <a href="mailto:info@isda.org">info@isda.org</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📖</div>
+            <div>
+              <h4>Journal — JDA</h4>
+              <a href="mailto:journal@isda.org">journal@isda.org</a>
+              <p>Submissions, review, editorial board</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">🏷</div>
+            <div>
+              <h4>Membership</h4>
+              <a href="mailto:membership@isda.org">membership@isda.org</a>
+              <p>Join, renew, update your record</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">🎤</div>
+            <div>
+              <h4>Conferences</h4>
+              <a href="mailto:conferences@isda.org">conferences@isda.org</a>
+              <p>Registration, submissions, sponsorship</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">🏆</div>
+            <div>
+              <h4>Awards & Nominations</h4>
+              <a href="mailto:awards@isda.org">awards@isda.org</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Mailing Address</h4>
+              <p>ISDA Secretariat<br>77 Massachusetts Avenue, Suite 310<br>Cambridge, MA 02139, USA</p>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div style="background:var(--navy-deep);border-radius:var(--radius-md);padding:1.25rem;margin-top:.5rem;">
+            <p style="color:rgba(255,255,255,.7);font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem;">Follow ISDA</p>
+            <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
+              <a href="#" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:.5rem 1rem;border-radius:var(--radius-sm);font-size:.78rem;font-weight:600;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy-deep)'" onmouseout="this.style.background='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.8)'">LinkedIn</a>
+              <a href="#" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:.5rem 1rem;border-radius:var(--radius-sm);font-size:.78rem;font-weight:600;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy-deep)'" onmouseout="this.style.background='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.8)'">Twitter / 𝕏</a>
+              <a href="#" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:.5rem 1rem;border-radius:var(--radius-sm);font-size:.78rem;font-weight:600;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy-deep)'" onmouseout="this.style.background='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.8)'">YouTube</a>
+              <a href="#" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.8);padding:.5rem 1rem;border-radius:var(--radius-sm);font-size:.78rem;font-weight:600;transition:all .2s;" onmouseover="this.style.background='var(--gold)';this.style.color='var(--navy-deep)'" onmouseout="this.style.background='rgba(255,255,255,.1)';this.style.color='rgba(255,255,255,.8)'">ResearchGate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-strip">
+    <div class="container newsletter-strip__inner">
+      <div><h3>Stay Informed</h3><p>Get the latest from ISDA delivered to your inbox.</p></div>
+      <form class="newsletter-form" onsubmit="return false;"><input type="email" placeholder="your@email.com"><button class="btn btn--dark" type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="site-logo" style="margin-bottom:.75rem;display:inline-flex;"><div class="site-logo__mark"><svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#C49A2B" stroke-width="1.5"/><path d="M7 14 L14 7 L21 14 L14 21 Z" fill="none" stroke="#1A7FA0" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#C49A2B"/></svg></div><div class="site-logo__text"><div class="site-logo__abbr">ISDA</div><div class="site-logo__name">Decision Analytics Society</div></div></a><p class="footer__tagline">Advancing decision analytics worldwide since 2010.</p><div class="footer__social"><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a><a href="#">R</a></div></div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="index.html">About ISDA</a></li><li><a href="../board-members/index.html">Board Members</a></li><li><a href="../divisions/index.html">Divisions</a></li><li><a href="../conferences/index.html">Conferences</a></li></ul></div>
+        <div class="footer__col"><h4>Journal</h4><ul><li><a href="../journal/index.html">ISDA Journal</a></li><li><a href="../journal/editorial-board.html">Editorial Board</a></li><li><a href="../awards/index.html">Awards</a></li><li><a href="../conferences/call-for-papers.html">Call for Papers</a></li></ul></div>
+        <div class="footer__col"><h4>Membership</h4><ul><li><a href="../membership/index.html">Join ISDA</a></li><li><a href="../membership/register.html">Register</a></li><li><a href="../membership/benefits.html">Benefits</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© <span id="footer-year"></span> International Society of Decision Analytics.</span><div style="display:flex;gap:1.5rem;"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending…'; btn.disabled = true;
+      await new Promise(r => setTimeout(r, 1200));
+      this.style.display = 'none';
+      document.getElementById('contact-success').style.display = 'flex';
+    });
+  </script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
